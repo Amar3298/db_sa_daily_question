@@ -1,0 +1,7 @@
+s = input()
+lst = list(s)
+print(True in [i.isalnum() for i in lst])
+print(True in [i.isalpha() for i in lst])
+print(True in [i.isdigit() for i in lst])
+print(True in [i.islower() for i in lst])
+print(True in [i.isupper() for i in lst])
