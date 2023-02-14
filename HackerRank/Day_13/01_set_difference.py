@@ -1,0 +1,7 @@
+aN = int(input())
+list1 = list(map(int,input().split()))
+aN3= int(input())
+list3 = list(map(int,input().split()))
+list1_set = set(list1)
+list3_set = set(list3)
+print(len(list1_set.difference(list3_set)))
