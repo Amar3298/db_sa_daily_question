@@ -3,7 +3,7 @@ class Solution:
             res = 0
             for i in arr:
                 res += i 
-            return res
+            return res #a
 
 if __name__ == "__main__": 		
     tc=int(input())
