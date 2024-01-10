@@ -12,3 +12,5 @@ my approach is as follows
 )
 2. Find the reminder for the prefix sum array for that we will make use of the map function we first declare a function where we will find the modulus of a single number then we use list(map(name_function,prefix_arr)) to find the reminder (modulus array)
 3. We need to find the longest subarray [2, 1, 2, 0, 1, 0, 2, 1] for example find the distance between 0th index 2 and the last index of 2 here it is 6(last index of 2)-0(1st Index of 2) now we will do this for all the elements that are not repeating that is 0,1,2 
+4. We will write a function for that that will iterate in forward as well as in reverse order and find the longest distance for a particular number before that we will create a unique element array we will loop on that and pas it to the function that return the longest distance and append it to a res list
+5. We will find the max of that res array and it will be our output
