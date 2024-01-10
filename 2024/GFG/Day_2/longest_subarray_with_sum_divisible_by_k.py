@@ -1,7 +1,7 @@
-N = 6
+N = 7
 K = 3
-# arr = [2, 7, 6, 1, 4, 5]
-arr = [5,2,1,4,7,8,2,5]
+arr = [-2, 2, -5, 12, -11, -1, 7]
+# arr = [5,2,1,4,7,8,2,5]
 
 def func_mod(n):
   """
@@ -10,7 +10,22 @@ def func_mod(n):
   output: reminder (that is divided by k)
   """
   return (n%K)
-
+def fin_longest_dis(lst,n):
+  len_arr = len(lst)-1
+  first_index = 0
+  last_index = len_arr
+  for i in range(len_arr):
+    if(lst[i]==n):
+      first_index = i 
+      break
+    
+  j = len_arr
+  while(j>=0):
+    if(lst[j]==n):
+      last_index = j 
+      break
+    j-=1
+  return last_index-first_index
 """
 # testing the func_mod function 
 
@@ -31,23 +46,15 @@ for i in range(N+2):
   End of testing the prefix sum 
   """
 reminder_arr = list(map(func_mod,prefix_sum))
-print(reminder_arr)
-# unique_elements = []
-# for i in reminder_arr:
-#   if i not in unique_elements:
-#     unique_elements.append(i)
+# print(reminder_arr)
+unique_elements = []
+for i in reminder_arr:
+  if i not in unique_elements:
+    unique_elements.append(i)
+    
 
-logest_arr = 0
-i = 0
-j = N+1 
-while(j>=i):
-  print(reminder_arr[i],reminder_arr[j])
-  if(reminder_arr[i]==reminder_arr[j]):
-    i+=1 
-    j-=1
-    tmp = j-i
-    if(tmp>logest_arr):
-      logest_arr = tmp 
-  i+=1 
-  j-=1
-print(logest_arr)
+res = []
+for i in unique_elements:
+  res.append(fin_longest_dis(reminder_arr,i))
+print(res)
+
