@@ -11,6 +11,11 @@ def func_mod(n):
   """
   return (n%K)
 def fin_longest_dis(lst,n):
+  """
+  input: arr and number for which we want to find the first index and last index
+  output: longest sub array that is divisible by k
+  """
+#   looping in forward direction
   len_arr = len(lst)-1
   first_index = 0
   last_index = len_arr
@@ -18,7 +23,8 @@ def fin_longest_dis(lst,n):
     if(lst[i]==n):
       first_index = i 
       break
-    
+
+# looping in reverse direction
   j = len_arr
   while(j>=0):
     if(lst[j]==n):
