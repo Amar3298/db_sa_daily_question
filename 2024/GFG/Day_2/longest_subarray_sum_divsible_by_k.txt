@@ -1,0 +1,14 @@
+We are given N which is the number of elements in the list then k we will use K to divide the subarray
+my approach is as follows 
+1. Find the prefix sum for the array (prefix sum is we will find the sum till that array e.g., [5,2,1,4,7,8,2,5] its prefix sum will be [5,7,8,12,19,27,29,34]
+5 = 5
+7 = 5 + 2
+8 = 5 + 2 + 1 
+12 = 5+ 2+ 1+ 4
+19 = 5+ 2+ 1+ 4+ 7
+27 = 5+ 2+ 1+ 4+ 7+ 8
+29 = 5+ 2+ 1+ 4+ 7+ 8+ 2
+34 = 5+ 2+ 1+ 4+ 7+ 8+ 2+ 5
+)
+2. Find the reminder for the prefix sum array for that we will make use of the map function we first declare a function where we will find the modulus of a single number then we use list(map(name_function,prefix_arr)) to find the reminder (modulus array)
+3. We need to find the longest subarray [2, 1, 2, 0, 1, 0, 2, 1] for example find the distance between 0th index 2 and the last index of 2 here it is 6(last index of 2)-0(1st Index of 2) now we will do this for all the elements that are not repeating that is 0,1,2 
