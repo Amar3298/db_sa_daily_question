@@ -1,0 +1,2 @@
+Approach will be simple the have given an array and k they want us to reverse the array 
+till k element and after that is should remain as it
