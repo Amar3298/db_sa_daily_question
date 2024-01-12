@@ -1,5 +1,5 @@
-Monotonic Stack it is a stack where the array is in assending order 
-e.g., [1,2,3,4,5] it should be always in assending order 
+Monotonic Stack it is a stack where the array is in ascending order 
+e.g., [1,2,3,4,5] it should be always in ascending order 
 we will given a number we need to remove the k elements so that after removing k number 
 it becomes the smallest number for that we will use Monotonic Stack
 For any query: - https://youtu.be/cFabMOnJaq0?si=oiJsP0l6DCLGcOYq
